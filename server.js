@@ -51,6 +51,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'All projects created by Tuan Anh Ha'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Page not found!'
